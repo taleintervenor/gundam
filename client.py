@@ -137,7 +137,7 @@ def thread_receive_data():
                 player_name_dict[uids[i]] = names[i]
                 # update name/job display according to battle message
                 label_name_vars[uids[i]].set(names[i])
-                label_job_vars[uids[i]].set(jobs[i])
+                label_job_vars[uids[i]].set(protocol.job_list[jobs[i]])
                 i += 1
             # disable battle and job button
             btn_battle.config(state="disabled")

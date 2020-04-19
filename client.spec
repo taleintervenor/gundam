@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['test.py'],
+a = Analysis(['client.py'],
              pathex=['D:\\Projects\\gundam'],
              binaries=[],
              datas=[],
@@ -21,7 +21,7 @@ exe = EXE(pyz,
           a.scripts,
           [],
           exclude_binaries=True,
-          name='test',
+          name='client',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
